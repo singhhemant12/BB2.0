@@ -1,0 +1,92 @@
+// Colors
+// $primary: #91076C;
+$primary:#0057FF;
+$secondary:#F5F5F5;
+$info:  #553E6C;
+$warning:#010E28;
+$light:#FFFFFF;
+$black:#1D1D1D;
+ 
+
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+    0:0,
+    8:($spacer*0.5),
+    16:($spacer),
+    24:($spacer*1.5),
+    32: ($spacer * 2),
+    40: ($spacer * 2.5),
+    48: ($spacer * 3),
+    56:($spacer*3.5),
+    64:($spacer*4),
+    72:($spacer*4.5),
+    80: ($spacer * 5),
+);
+
+// // Button
+// $input-btn-font-size-lg: 1rem !default;
+
+// $btn-border-radius: 2rem !default; 
+// $btn-border-radius-lg: 2rem !default;
+// $btn-border-radius-sm: 2rem !default;
+
+// // Border
+// $border-color: #E8E8E8;
+
+// //Typography
+$font-weight-normal: 500 !default;
+$font-weight-bold: 600 !default;
+$headings-font-weight: 600 !default;
+$navbar-nav-link-padding-x:1rem !default;
+$font-size-base: .9rem!default;
+$font-family: 'Open Sans', sans-serif!default;
+
+$card-border-width:none !default;
+
+// Headings
+$h2-font-size: 2rem !default;
+$h2-font-size:1.5rem !default;
+$h6-font-size:1rem !default;
+
+// small
+
+$small-font-size: 12px !default;
+
+// lead
+
+$lead-font-size:  16px !default;
+
+//display
+// $display4-size:  56px !default ;
+
+
+//limk-color
+$link-color:$black !default ;
+
+// $display4-size: 3.5rem !default;
+
+// $headings-line-height:  1.2rem !default;
+
+// $display-line-height:  56px;
+
+$dropdown-min-width:10rem!default;
+
+$dropdown-spacer:  1.5rem !default;
+$dropdown-border-color: #ffffff !default;
+$dropdown-link-hover-color: none!default;
+$dropdown-link-active-bg:none !default;
+
+// $dropdown-item-padding-x:          10rem !default;
+
+//carousel
+
+$carousel-indicator-active-bg:  $primary !default;
+
+$carousel-indicator-width:           5px !default;
+$carousel-indicator-height:        5px !default;
+
+
+
+  
