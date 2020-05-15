@@ -6,6 +6,8 @@ $info:  #553E6C;
 $warning:#010E28;
 $light:#FFFFFF;
 $black:#1D1D1D;
+$success:#696969;
+$danger: #454545;
  
 
 
@@ -40,14 +42,14 @@ $font-weight-normal: 500 !default;
 $font-weight-bold: 600 !default;
 $headings-font-weight: 600 !default;
 $navbar-nav-link-padding-x:1rem !default;
-$font-size-base: .9rem!default;
-$font-family: 'Open Sans', sans-serif!default;
+$font-size-base: .875rem;
+$font-family: 'Open Sans', sans-serif !default;
 
 $card-border-width:none !default;
 
 // Headings
 $h2-font-size: 2rem !default;
-$h2-font-size:1.5rem !default;
+$h4-font-size:1.5rem !default;
 $h6-font-size:1rem !default;
 
 // small
@@ -87,6 +89,24 @@ $carousel-indicator-active-bg:  $primary !default;
 $carousel-indicator-width:           5px !default;
 $carousel-indicator-height:        5px !default;
 
+// @media (max-width: 530px) {
+//     .bodycard {
+//         padding-top:32px;
+//     }
+// }
 
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px
+// ) !default;
 
-  
+// tabs
+
+// $nav-tabs-link-active-color: $success   !default;
+// $nav-tabs-link-active-bg:    $primary !default;
+
+$nav-pills-link-active-color:       $primary !default;
+$nav-pills-link-active-bg:        #ffffff !important;
