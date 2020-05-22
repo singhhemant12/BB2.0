@@ -1,38 +1,15 @@
-// $background:#F5F5F5;
-// .brands{
-//     background-color:$background;
-//    padding:3rem 0;
-// }
-// .carousel-indicators .indi {
-//     border-radius: 50%;
-//   }
 
-//  .nav-link:active,.navlink.active {
-//     background-color: rgba(0, 87, 255, 0.1);
-//     border-radius: 18px;
-   
-//   }
-//   .fa-angle-down:active,.fa-angle-down.active{
-//     transform: rotate(180deg);
-//   }
-#build{
-  line-height: 2.25rem!important;
-}
-.main-heading{
-  line-height:4.2rem !important;
-  font-size:3.5rem !important;
-}
 
 @include media-breakpoint-down(sm) { 
-  .main-heading{
+  .display-4{
     line-height: 2.5rem !important;
     font-size:1.5rem !important;
   }
  }
 
-.cardbox :hover{
+.cardbox:hover{
   box-shadow:  0.1875rem  0.1875rem 0.3125rem  0.375rem #ccc;
-  border-top:1px solid #0057FF;
+  border-top:1px solid #0057FF !important;
 
 }
 
@@ -47,4 +24,27 @@
   color:#0057FF !important ;
    
 }
+.display-4{
+  font-family: 'Montserrat' ;
+}
+.head2{
+   line-height: 3rem;
+}
+.head4{
+  line-height: 2.25rem;
+  font-family: 'Montserrat';
+}
+.carouselindi{
+  bottom: -5rem;
+}
+.small{
+  line-height:1.125 !important;
+  font-weight:400 !important;
+}
 
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  border-left:1px solid #0057FF ; 
+}
+*{
+  box-sizing: border-box;
+}

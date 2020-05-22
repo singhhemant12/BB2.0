@@ -1,13 +1,59 @@
-// Colors
-// $primary: #91076C;
-$primary:#0057FF;
-$secondary:#F5F5F5;
-$info:  #553E6C;
-$warning:#010E28;
-$light:#FFFFFF;
-$black:#1D1D1D;
-$success:#696969;
-$danger: #454545;
+//   colors
+
+
+
+$black:#454545 !default;
+$dark:#1D1D1D !default;
+$lighter:#696969 !default;
+$universal:#E5E8ED !default;
+
+$colors: () !default;
+
+$colors: map-merge(
+  (
+    "black": $black,
+    "dark":$dark,
+    "lighter":$lighter,
+    "universal":$universal,
+    ),
+  $colors
+);
+
+//  ******************theme-colors*******************
+
+$primary:      #0057FF !default;
+$secondary:    #F5F5F5 !default;
+$success:       #696969 !default;
+$info:        #553E6C !default;
+$warning:    #010E28 !default;
+$black:       #1D1D1D !default ;
+$light:      #FFFFFF !default;
+$lightblue:  #015C90 !default;
+$lightpink:  rgba(158, 12, 1, 0.1);
+$skyblue:    rgba(83, 193, 222, 0.2);
+
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+    (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "light":      $light,
+    "black":      $black,
+    "lightblue":  $lightblue,
+    "lightpink":  $lightpink,
+    "skyblue":    $skyblue,
+  ),
+  $theme-colors
+ );
+   
+    // ****************linkr**********************
+ 
+
+
  
 
 
@@ -15,6 +61,7 @@ $danger: #454545;
 $spacer: 1rem !default;
 $spacers: (
     0:0,
+    5:($spacer*0.3),
     8:($spacer*0.5),
     16:($spacer),
     24:($spacer*1.5),
@@ -27,86 +74,111 @@ $spacers: (
     80: ($spacer * 5),
 );
 
-// // Button
-// $input-btn-font-size-lg: 1rem !default;
+// Button
+$input-btn-font-size: 14px !default;
 
-// $btn-border-radius: 2rem !default; 
-// $btn-border-radius-lg: 2rem !default;
-// $btn-border-radius-sm: 2rem !default;
 
-// // Border
-// $border-color: #E8E8E8;
+
+
+$link-color:$black !default ;
+
+
+ //  ************************tabs**********************
+
+ $nav-tabs-link-active-color: $success   !default;
+$nav-tabs-link-active-bg:    $primary !default;
+
+$nav-pills-link-active-color:       $primary !default;
+$nav-pills-link-active-bg:        #ffffff !important;
+
+
+// ********************carousel****************************
+
+$carousel-indicator-active-bg:  $primary !default;
+$carousel-indicator-width:          0.313rem !default;
+$carousel-indicator-height:        0.313rem !default;
+
+
+
 
 // //Typography
-$font-weight-normal: 500 !default;
+// $line-height-base:            1.25 !default;
+$font-weight-normal: 400 !default;
 $font-weight-bold: 600 !default;
 $headings-font-weight: 600 !default;
 $navbar-nav-link-padding-x:1rem !default;
 $font-size-base: .875rem;
-$font-family: 'Open Sans', sans-serif !default;
+$font-family-base:  'Open Sans'      !default;
 
-$card-border-width:none !default;
 
 // Headings
 $h2-font-size: 2rem !default;
 $h4-font-size:1.5rem !default;
 $h6-font-size:1rem !default;
+$headings-font-family:    'Montserrat' !default;
 
 // small
 
-$small-font-size: 12px !default;
+$small-font-size: 0.75rem !important;
 
 // lead
 
-$lead-font-size:  16px !default;
-
-//display
-// $display4-size:  56px !default ;
+$lead-font-size:  1rem !default;
+$lead-font-weight: 400 !default;
 
 
-//limk-color
-$link-color:$black !default ;
 
-// $display4-size: 3.5rem !default;
 
-// $headings-line-height:  1.2rem !default;
 
-// $display-line-height:  56px;
 
-$dropdown-min-width:10rem!default;
+// display
 
-$dropdown-spacer:  1.5rem !default;
-$dropdown-border-color: #ffffff !default;
-$dropdown-link-hover-color: none!default;
-$dropdown-link-active-bg:none !default;
+$display4-size: 3.5rem !default;
+$display4-weight:             700 !default;
+$headings-line-height:  1.5rem !default;
+$display-line-height:  4.25rem;
 
-// $dropdown-item-padding-x:          10rem !default;
+// dropdown
 
-//carousel
+$dropdown-min-width:     10rem!default;
+$dropdown-spacer:         1.5rem !default;
+$dropdown-border-color:  #ffffff !default;
+$dropdown-link-hover-color: null    !default;
+$dropdown-link-active-bg:   null !default;
 
-$carousel-indicator-active-bg:  $primary !default;
 
-$carousel-indicator-width:           5px !default;
-$carousel-indicator-height:        5px !default;
+// border
+$border-color:            #E5E8ED     !default;
 
-// @media (max-width: 530px) {
-//     .bodycard {
-//         padding-top:32px;
-//     }
-// }
+$card-border-width:               #ffffff !default;
 
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px
-// ) !default;
 
-// tabs
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    25: 4rem,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+      // forms
+$input-font-size: .875rem!default;
+$input-font-weight: 400 !default;
+$input-color:          #1D1D1D !default;
+$input-placeholder-color: #1D1D1D !default;          
 
-// $nav-tabs-link-active-color: $success   !default;
-// $nav-tabs-link-active-bg:    $primary !default;
 
-$nav-pills-link-active-color:       $primary !default;
-$nav-pills-link-active-bg:        #ffffff !important;
+  // check
+$custom-select-font-size:    0.875rem !default;
+$custom-select-font-weight:  400 !default;
+$custom-select-color:  #1D1D1D !default;
+
+
+
+
+
+
