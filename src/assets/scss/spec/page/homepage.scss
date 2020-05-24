@@ -48,3 +48,27 @@
 *{
   box-sizing: border-box;
 }
+
+@mixin border($top,$nature,$color) {
+ border-top:$top $nature $color;
+ border-left:$top $nature $color;
+ border-right:$top $nature $color; 
+}
+
+.imgtop{
+@include border(1.25rem,solid,#015C90);
+  
+}
+
+.imgto{
+  @include border(1.25rem,solid ,#553E6C);
+}
+.imgt{
+  @include border(1.25rem,solid , #2C624A);
+ 
+}
+.imgg{
+  @include border(1.25rem, solid,#4750A4);
+  
+}
+

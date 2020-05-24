@@ -16,6 +16,7 @@
   --dark: #1D1D1D;
   --lighter: #696969;
   --universal: #E5E8ED;
+  --darkblue: #015C90;
   --primary: #0057FF;
   --secondary: #F5F5F5;
   --success: #696969;
@@ -9090,6 +9091,26 @@ a.text-skyblue:hover, a.text-skyblue:focus {
 
 * {
   box-sizing: border-box; }
+
+.imgtop {
+  border-top: 1.25rem solid #015C90;
+  border-left: 1.25rem solid #015C90;
+  border-right: 1.25rem solid #015C90; }
+
+.imgto {
+  border-top: 1.25rem solid #553E6C;
+  border-left: 1.25rem solid #553E6C;
+  border-right: 1.25rem solid #553E6C; }
+
+.imgt {
+  border-top: 1.25rem solid #2C624A;
+  border-left: 1.25rem solid #2C624A;
+  border-right: 1.25rem solid #2C624A; }
+
+.imgg {
+  border-top: 1.25rem solid #4750A4;
+  border-left: 1.25rem solid #4750A4;
+  border-right: 1.25rem solid #4750A4; }
 
 .label {
   font-weight: 600;

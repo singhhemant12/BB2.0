@@ -6,6 +6,7 @@ $black:#454545 !default;
 $dark:#1D1D1D !default;
 $lighter:#696969 !default;
 $universal:#E5E8ED !default;
+$darkblue: #015C90;
 
 $colors: () !default;
 
@@ -15,6 +16,7 @@ $colors: map-merge(
     "dark":$dark,
     "lighter":$lighter,
     "universal":$universal,
+    "darkblue": $darkblue,
     ),
   $colors
 );
