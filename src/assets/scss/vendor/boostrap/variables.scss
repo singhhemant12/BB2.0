@@ -158,7 +158,7 @@ $card-border-width:               #ffffff !default;
 $sizes: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $sizes: map-merge(
-  (
+  ( 16:1rem,
     25: 4rem,
     50: 50%,
     75: 75%,
@@ -180,7 +180,7 @@ $custom-select-font-weight:  400 !default;
 $custom-select-color:  #1D1D1D !default;
 
 
-
+$link-hover-decoration:                  none !important;
 
 
 

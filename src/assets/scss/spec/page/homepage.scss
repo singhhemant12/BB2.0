@@ -2,8 +2,22 @@
 
 @include media-breakpoint-down(sm) { 
   .display-4{
-    line-height: 2.5rem !important;
-    font-size:1.5rem !important;
+    font-size: 42px;
+  line-height: 50px;
+  }
+ }
+ @include media-breakpoint-down(sm) { 
+  .mainbutton{
+    width:12rem ;
+     height: 2rem;
+    margin-left: 6rem;
+    text-align: center;
+  }
+ }
+ @include media-breakpoint-down(sm) { 
+  .mainsmall{
+    margin-left: 4rem;
+   
   }
  }
 
@@ -71,4 +85,16 @@
   @include border(1.25rem, solid,#4750A4);
   
 }
+// .rightangle{
+//   height:1rem;
+  
+// }
+// .fa-long-arrow-alt-right {
+//   height: 2rem;
+// }
 
+.caps{
+  line-height: 1.25rem;
+  font-weight:600;
+  color:#1D1D1D;
+}
