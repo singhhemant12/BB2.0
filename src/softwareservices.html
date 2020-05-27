@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700|Open+Sans:400,600&display=swap"
     rel="stylesheet">
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script  src= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  
 
   <title>BB_2.0</title>
 </head>
@@ -16,59 +17,91 @@
 <body>
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-24 border-bottom ">
-       <a class="navbar-brand" href="#"><img src="./assets/static/icons/00_Brand Logo.svg" alt=""></a>
+      <a class="navbar-brand" href="#" itemscope itemtype="http://schema.org/Brand"><img
+          src="./assets/static/icons/00_Brand Logo.svg" alt="" itemprop="logo"></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <!-- <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li> -->
           <li class="nav-item position-static nav-item dropdown  mr-16 ">
-            <a class="nav-link font-weight-bold  text-dark  d-flex justify-content-between  " id="navbarDropdown" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false" href="#"><span>Service </span><span class="ml-lg-5"><i
-                  class="fas fa-angle-down  "></i></span></a>
+            <a class="nav-link font-weight-bold  text-dark  d-flex justify-content-between  " id="navbarDropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><span>Service </span><span
+                class="ml-lg-5" ><i class="fas fa-angle-down torotate" id="touprotate"></i></span></a>
 
-            <div class="dropdown-menu  position-absolute ml-80" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu  position-absolute ml-xl-80 ml-md-80 ml-lg-80 ml-0  " aria-labelledby="navbarDropdown">
               <div class="container">
                 <div class="row">
-                  <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-                    <a class="text-decoration-none dropdown-item font-weight-bold  pb-24" href="">Web App Development</a>
-                    <a class=" dropdown-item pb-8" href="softwareservices.html">Ruby on rails Development</a>
-                    <a class=" dropdown-item pb-8" href="Lifecycle.html">ReactJs Development</a>
-                    <a class=" dropdown-item pb-8" href="">SaaS Application Development</a>
-                    <a class=" dropdown-item pb-8" href="">Progressive WebApp Development</a>
-                    <a class=" dropdown-item pb-8" href="">Custom Web App Development</a>
+                  <div class="col-xl-3 col-md-3 col-sm-6 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Web App Development" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class="text-decoration-none dropdown-item font-weight-bold  pb-24 caps text-uppercase" href="">Web App
+                      Development</a>
+                    <a class=" dropdown-item pb-8 simplepara" href="softwareservices.html" itemprop="offers"><span
+                        itemprop="name">Ruby on rails Development</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="Lifecycle.html" itemprop="offers"><span itemprop="name">ReactJs
+                        Development</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">SaaS Application
+                        Development</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Progressive WebApp
+                        Development</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Custom Web App
+                        Development</span></a>
                   </div>
-                  <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-                    <a class=" dropdown-item font-weight-bold pb-24" href="">HIRE WEB APP DEVELOPERS</a>
-                    <a class=" dropdown-item pb-8" href="">Hire RoR Developers</a>
-                    <a class=" dropdown-item pb-8" href="">Hire ReactJs Developers</a>
-                    <a class=" dropdown-item pb-8" href=""> Hire HTML/CSS Developers</a>
-                    <a class=" dropdown-item pb-8" href="">Hire Bootstrap Developers</a>
-                    <a class=" dropdown-item pb-8" href="">Hire QA / Tester</a>
+                  <div class="col-xl-3 col-md-3 col-sm-6 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="HIRE WEB APP DEVELOPERS" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class=" dropdown-item font-weight-bold pb-24 simplepara" href="" itemprop="offers"><span
+                        itemprop="name">HIRE WEB APP DEVELOPERS</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Hire RoR
+                        Developers</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Hire ReactJs
+                        Developers</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name"> Hire HTML/CSS
+                        Developers</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Hire Bootstrap
+                        Developers</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Hire QA /
+                        Tester</span></a>
 
                   </div>
-                  <div class="col-xl-3 col-md-3 col-sm-6 col-12">
+                  <div class="col-xl-3 col-md-3 col-sm-6 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="UI/UX Design" />
+                    <meta itemprop="provider" content="Bluebash" />
                     <a class=" dropdown-item font-weight-bold pb-24" href="">UI/UX Design</a>
-                    <a class=" dropdown-item pb-8" href="">Experience Design</a>
-                    <a class=" dropdown-item pb-8" href="">UI/UX Design</a>
-                    <a class=" dropdown-item pb-8" href="">UX Stategy & Design</a>
-                    <a class=" dropdown-item pb-8" href="">Web Application Design</a>
-                    <a class=" dropdown-item pb-8" href="">Responsive Web Design</a>
-                    <a class=" dropdown-item" href="">iPhone App Design</a>
-                    <a class=" dropdown-item" href="">Android App Design</a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Experience
+                        Design</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">UI/UX
+                        Design</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">UX Stategy &
+                        Design</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Web Application
+                        Design</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Responsive Web
+                        Design</span></a>
+                    <a class=" dropdown-item simplepara" href="" itemprop="offers"><span itemprop="name">iPhone App
+                        Design</span></a>
+                    <a class=" dropdown-item simplepara" href="" itemprop="offers"><span itemprop="name">Android App
+                        Design</span></a>
                   </div>
-                  <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-                    <a class=" dropdown-item font-weight-bold pb-24" href="">Our expertise</a>
-                    <a class=" dropdown-item pb-8" href="">Enterprise Software Development</a>
-                    <a class=" dropdown-item pb-8" href="">Software Development for Startup</a>
-                    <a class=" dropdown-item pb-8" href="">Quality Assurance & Testing</a>
-                    <a class=" dropdown-item pb-8" href="">Offshore Development India</a>
+                  <div class="col-xl-3 col-md-3 col-sm-6 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Our Expertise" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class=" dropdown-item font-weight-bold pb-24 caps" href="">Our expertise</a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Enterprise Software
+                        Development</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Software Development
+                        for Startup</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Quality Assurance &
+                        Testing</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Offshore Development
+                        India</span></a>
 
                   </div>
                   <hr>
@@ -90,60 +123,84 @@
 
 
           <li class="nav-item position-static nav-item dropdown mr-16">
-            <a class="nav-link  font-weight-bold text-dark d-flex justify-content-between" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false" href="#" href="#"> <span>Technology</span> <span class="fas fa-angle-down ml-5 mt-5"></span></a>
-            <div class="dropdown-menu  position-absolute ml-80" aria-labelledby="navbarDropdown">
+            <a class="nav-link  font-weight-bold text-dark d-flex justify-content-between" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="#" href="#"> <span>Technology</span> <span
+                class="fas fa-angle-down ml-5 mt-5 torotate"></span></a>
+            <div class="dropdown-menu  position-absolute  ml-xl-80 ml-md-80 ml-lg-80" aria-labelledby="navbarDropdown">
               <div class="container">
                 <div class="row">
-                  <div class="col-xl-2 col-md-2 col-sm-3 col-12">
-                    <a class="text-decoration-none dropdown-item font-weight-bold pb-24" href="">Fonrt-end</a>
-                    <a class=" dropdown-item pb-8" href="">HTML/CSS</a>
-                    <a class=" dropdown-item pb-8" href="">ReactJs Development</a>
-                    <a class=" dropdown-item pb-8" href="">Bootstrap</a>
-                    <a class=" dropdown-item pb-8" href="">Javascript</a>
-                    <a class=" dropdown-item pb-8" href="">React JS</a>
-                    <a class=" dropdown-item pb-8" href="">Vue JS</a>
-                  </div>
-                  <div class="col-xl-2 col-md-2 col-sm-3 col-12">
-                    <a class=" dropdown-item font-weight-bold pb-24" href="">BACK-END</a>
-                    <a class=" dropdown-item pb-8" href="">Ruby on Rails</a>
-                    <a class=" dropdown-item pb-8" href="">Node JS</a>
-                    <a class=" dropdown-item pb-8" href=""> Phoenix</a>
+                  <div class="col-xl-2 col-md-2 col-sm-3 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Front end" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class="text-decoration-none dropdown-item font-weight-bold pb-24 caps text-uppercase" href="" itemprop="offers"><span
+                        itemprop="name">Front-end</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">HTML/CSS</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">ReactJs
+                        Development</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Bootstrap</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Javascript</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">React JS</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Vue JS</a>
+                  </div></span>
+                  <div class="col-xl-2 col-md-2 col-sm-3 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Back end" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class=" dropdown-item font-weight-bold pb-24 simplepara caps"  href="" itemprop="offers"><span
+                        itemprop="name">BACK-END</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Ruby on
+                        Rails</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Node JS</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"> <span itemprop="name">Phoenix</span></a>
 
 
                   </div>
-                  <div class="col-xl-2 col-md-2 col-sm-3 col-12">
-                    <a class=" dropdown-item font-weight-bold pb-24" href="">DATABASE</a>
-                    <a class=" dropdown-item pb-8" href="">PostgresSQL</a>
-                    <a class=" dropdown-item pb-8" href="">MongoDB</a>
-                    <a class=" dropdown-item pb-8" href="">Elastic Search</a>
-                    <a class=" dropdown-item pb-8" href="">Neo4J</a>
-                    <a class=" dropdown-item pb-8" href="">MySQL</a>
+                  <div class="col-xl-2 col-md-2 col-sm-3 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Database" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class=" dropdown-item font-weight-bold pb-24  simplepara" href="" itemprop="offers"><span
+                        itemprop="name">DATABASE</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span
+                        itemprop="name">PostgresSQL</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">MongoDB</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Elastic
+                        Search</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Neo4J</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">MySQL</span></a>
 
                   </div>
-                  <div class="col-xl-2 col-md-2 col-sm-3 col-12">
-                    <a class=" dropdown-item font-weight-bold pb-24" href="">Hosting</a>
-                    <a class=" dropdown-item pb-8" href="">AWS</a>
-                    <a class=" dropdown-item pb-8" href="">Heroku</a>
-                    <a class=" dropdown-item pb-8" href="">Digital Ocean</a>
-                    <a class=" dropdown-item pb-8" href="">Linode</a>
-                    <a class=" dropdown-item pb-8" href="">Rackspace</a>
+                  <div class="col-xl-2 col-md-2 col-sm-3 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Hosting" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class=" dropdown-item font-weight-bold pb-24 text-uppercase caps" href="" itemprop="offers"><span
+                        itemprop="name">Hosting</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">AWS</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Heroku</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Digital
+                        Ocean</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Linode</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Rackspace</span></a>
 
                   </div>
-                  <div class="col-xl-2 col-md-2 col-sm-3 col-12">
-                    <a class=" dropdown-item font-weight-bold pb-24" href="">Agile & DevOps</a>
-                    <a class=" dropdown-item pb-8" href="">Basecamp</a>
-                    <a class=" dropdown-item pb-8" href="">Jira</a>
-                    <a class=" dropdown-item pb-8" href="">Jenkins</a>
-                    <a class=" dropdown-item pb-8" href="">Git</a>
-                    <a class=" dropdown-item pb-8" href="">Slack</a>
+                  <div class="col-xl-2 col-md-2 col-sm-3 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Agile and Devops" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class=" dropdown-item font-weight-bold pb-24 caps text-uppercase" href="" itemprop="offers"><span
+                        itemprop="name">Agile & DevOps</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Basecamp</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Jira</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Jenkins</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Git</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Slack</span></a>
 
                   </div>
-                  <div class="col-xl-2 col-md-2 col-sm-3 col-12">
-                    <a class=" dropdown-item font-weight-bold pb-24" href="">PAYMENT GATEWAY</a>
-                    <a class=" dropdown-item pb-8" href="">Stripe</a>
-                    <a class=" dropdown-item pb-8" href="">Square Up</a>
-                    <a class=" dropdown-item pb-8" href="">Pay Pal</a>
+                  <div class="col-xl-2 col-md-2 col-sm-3 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Payment Gateway" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class=" dropdown-item font-weight-bold text-uppercase caps pb-24" href="" itemprop="offers"><span
+                        itemprop="name">PAYMENT GATEWAY</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Stripe</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Square Up</span></a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Pay Pal</span></a>
                   </div>
                   <hr>
                 </div>
@@ -159,44 +216,61 @@
 
           </li>
           <li class="nav-item position-static nav-item dropdown mr-16">
-            <a class="nav-link  font-weight-bold text-dark d-flex justify-content-between " data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false" href="#" href="#" href="#"> <span >Solutions</span>  <span><i class="fas fa-angle-down ml-8"></i></span></a>
-            <div class="dropdown-menu  position-absolute ml-80" aria-labelledby="navbarDropdown">
+            <a class="nav-link  font-weight-bold text-dark d-flex justify-content-between " data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="#" href="#" href="#"> <span>Solutions</span> <span><i
+                  class="fas fa-angle-down ml-8 torotate"></i></span></a>
+            <div class="dropdown-menu  position-absolute ml-xl-80 ml-md-80 ml-lg-80 ml-0" aria-labelledby="navbarDropdown">
               <div class="container">
                 <div class="row">
-                  <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-                    <a class="text-decoration-none dropdown-item font-weight-bold pb-8 " href="">Speed Optimization</a>
-                    <p class="pb-32 pl-24 ">Lorem ipsum dolor sit amet, con sect etur adipiscing elit ut aliquam, purus
+                  <div class="col-xl-3 col-md-3 col-sm-6 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Speed Optimization" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class="text-decoration-none dropdown-item font-weight-bold pb-8 caps text-uppercase" href="" itemprop="offers"><span
+                        itemprop="name">Speed Optimization</span></a>
+                    <p class="pb-32 pl-24 simplepara ">Lorem ipsum dolor sit amet, con sect etur adipiscing elit ut aliquam, purus
                       sit fero teck.</p>
-                    <a class=" dropdown-item pb-8 font-weight-bold" href="">EHR Software Solution</a>
+                    <a class=" dropdown-item pb-8 font-weight-bold text-uppercase caps" href="" itemprop="offers"><span itemprop="name">EHR
+                        Software Solution</a>
                     <p class="pl-24">Lorem ipsum dolor sit amet, con sect etur adipiscing elit ut aliquam, purus sit
                       fero teck.</p>
                   </div>
-                  <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-                    <a class="text-decoration-none dropdown-item font-weight-bold pb-8" href="">Website Visibility</a>
+                  <div class="col-xl-3 col-md-3 col-sm-6 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="Website Visibility" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class="text-decoration-none dropdown-item font-weight-bold pb-8" href="" itemprop="offers"><span
+                        itemprop="name">Website Visibility</span></a>
                     <p class="pb-32 pl-24">Lorem ipsum dolor sit amet, con sect etur adipiscing elit ut aliquam, purus
                       sit fero teck.</p>
-                    <a class=" dropdown-item pb-8 font-weight-bold" href="">ERP Software Solution</a>
+                    <a class=" dropdown-item pb-8 font-weight-bold text-uppercase caps" href="" itemprop="offers"><span itemprop="name">ERP
+                        Software Solution</a>
                     <p class="pl-24 ">Lorem ipsum dolor sit amet, con sect etur adipiscing elit ut aliquam, purus sit
                       fero teck.</p>
 
                   </div>
-                  <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-                    <p class="text-decoration-none dropdown-item font-weight-bold pb-8" href="">e-Commerce Software
-                      Solution</p>
+                  <div class="col-xl-3 col-md-3 col-sm-6 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="e-Commerce Software Solution" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <p class="text-decoration-none dropdown-item font-weight-bold pb-8" href="" itemprop="offers"><span
+                        itemprop="name">e-Commerce Software
+                        Solution</span></p>
                     <p class="pb-32 pl-24">Lorem ipsum dolor sit amet, con sect etur adipiscing elit ut aliquam, purus
                       sit fero teck.</p>
-                    <a class=" dropdown-item pb-8 font-weight-bold" href="">B2B Software Solution</a>
+                    <a class=" dropdown-item pb-8 font-weight-bold caps" href="" itemprop="offers"><span itemprop="name">B2B
+                        Software Solution</span></a>
                     <p class="pl-24  ">Lorem ipsum dolor sit amet, con sect etur adipiscing elit ut aliquam, purus sit
                       fero teck.</p>
 
                   </div>
-                  <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-                    <a class="text-decoration-none dropdown-item font-weight-bold pb-8" href="">CRM Software
-                      Solution</a>
+                  <div class="col-xl-3 col-md-3 col-sm-6 col-12" itemscope itemtype="https://schema.org/Service">
+                    <meta itemprop="serviceType" content="CRM Software Solution" />
+                    <meta itemprop="provider" content="Bluebash" />
+                    <a class="text-decoration-none dropdown-item font-weight-bold pb-8 text-uppercase caps" href="" itemprop="offers"><span
+                        itemprop="name">CRM Software
+                        Solution</span></a>
                     <p class="pb-32 pl-24">Lorem ipsum dolor sit amet, con sect etur adipiscing elit ut aliquam, purus
                       sit fero teck.</p>
-                    <a class=" dropdown-item pb-8 font-weight-bold" href="">B2C Software Solution</a>
+                    <a class=" dropdown-item pb-8 font-weight-bold text-uppercase caps" href="" itemprop="offers"><span itemprop="name">B2C
+                        Software Solution</span></a>
                     <p class="pl-24 ">Lorem ipsum dolor sit amet, con sect etur adipiscing elit ut aliquam, purus sit
                       fero teck.</p>
                   </div>
@@ -215,39 +289,49 @@
             </div>
           </li>
           <li class="nav-item position-static nav-item dropdown mr-16">
-            <a class="nav-link font-weight-bold  text-dark d-flex justify-content-between " data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false" href="#"> <span>Industries</span> <span><i class="fas fa-angle-down ml-5"></i></span></a>
-            <div class="dropdown-menu  position-absolute ml-80" aria-labelledby="navbarDropdown">
+            <a class="nav-link font-weight-bold  text-dark d-flex justify-content-between " data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="#"> <span>Industries</span> <span><i
+                  class="fas fa-angle-down ml-5 torotate"></i></span></a>
+            <div class="dropdown-menu  position-absolute ml-xl-80 ml-md-80 ml-lg-80 ml-0" aria-labelledby="navbarDropdown">
               <div class="container">
-                <div class="row">
+                <div class="row" itemscope itemtype="https://schema.org/Service">
+                  <meta itemprop="provider" content="Bluebash" />
                   <div class="col-xl-2 col-md-2 col-sm-4 col-12">
-                    <a class="text-decoration-none dropdown-item  pb-8 " href="">Real Estate</a>
+                    <a class="text-decoration-none dropdown-item  pb-8 simplepara " href="" itemprop="offers"><span
+                        itemprop="name">Real Estate</span></a>
 
-                    <a class=" dropdown-item pb-8 " href="">Recruiting & Staffing</a>
+                    <a class=" dropdown-item pb-8 simplepara " href="" itemprop="offers"><span itemprop="name">Recruiting &
+                        Staffing</span></a>
 
                   </div>
                   <div class="col-xl-2 col-md-2 col-sm-4 col-12">
-                    <a class="text-decoration-none dropdown-item  pb-8" href="">Fintech & Banking</a>
+                    <a class="text-decoration-none dropdown-item  simplepara pb-8" href="" itemprop="offers"><span
+                        itemprop="name">Fintech & Banking</span></a>
 
-                    <a class=" dropdown-item pb-8 " href="">Sports & Entertainment</a>
+                    <a class=" dropdown-item pb-8 simplepara" href="" itemprop="offers"><span itemprop="name">Sports &
+                        Entertainment</span></a>
 
 
                   </div>
 
                   <div class="col-xl-2 col-md-2 col-sm-4 col-12">
-                    <a class="text-decoration-none dropdown-item  pb-8" href="">Health Care & Fitness</a>
+                    <a class="text-decoration-none dropdown-item  simplepara pb-8" href="" itemprop="offers"><span
+                        itemprop="name">Health Care & Fitness</span></a>
 
 
 
                   </div>
                   <div class="col-xl-2 col-md-2 col-sm-4 col-12">
-                    <a class="text-decoration-none dropdown-item  pb-8" href="">Social Marketing</a>
+                    <a class="text-decoration-none dropdown-item simplepara pb-8" href="" itemprop="offers"><span
+                        itemprop="name">Social Marketing</span></a>
                   </div>
                   <div class="col-xl-2 col-md-2 col-sm-4 col-12">
-                    <a class="text-decoration-none dropdown-item  pb-8" href="">Travel & Tourism</a>
+                    <a class="text-decoration-none dropdown-item simplepara pb-8" href="" itemprop="offers"><span
+                        itemprop="name">Travel & Tourism</span></a>
                   </div>
                   <div class="col-xl-2 col-md-2 col-sm-4 col-12">
-                    <a class="text-decoration-none dropdown-item  pb-8" href="">Education & e-Learning</a>
+                    <a class="text-decoration-none dropdown-item simplepara pb-8" href="" itemprop="offers"><span
+                        itemprop="name">Education & e-Learning</span></a>
                   </div>
                   <hr>
 
@@ -264,42 +348,51 @@
             </div>
           </li>
           <li class="nav-item position-static nav-item dropdown mr-16">
-            <a class="nav-link  font-weight-bold text-dark d-flex justify-content-between" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false" href="#"> <span>Case study</span> <span><i class="fas fa-angle-down ml-5"></i></span></a>
-            <div class="dropdown-menu  position-absolute ml-80" aria-labelledby="navbarDropdown">
+            <a class="nav-link  font-weight-bold text-dark d-flex justify-content-between" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="#"> <span>Case study</span> <span><i
+                  class="fas fa-angle-down ml-5 torotate"></i></span></a>
+            <div class="dropdown-menu  position-absolute ml-xl-80 ml-md-80 ml-lg-80 ml-0" aria-labelledby="navbarDropdown">
               <div class="container">
                 <div class="row">
                   <div class="container">
                     <a class="font-weight-bold" href=""> FEATURED CASE STUDIES</a>
                   </div>
                   <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-
-                    <div class="card-body">
-                      <img class="img-fluid pb-24" src="./assets/static/images/thumb-image.svg" alt="...">
-                      <a href=""><small class="font-weight-bold">HealthCare & Fitness</small></a>
+                    <div class="card-body" itemscope itemtype="https://schema.org/Article">
+                      <meta itemprop="author" content="tobeupdated" />
+                      <meta itemprop="publisher" content="Bluebash" />
+                      <img class="img-fluid pb-24" src="./assets/static/images/thumb-image.svg" alt="..."
+                        itemprop="image">
+                      <a href=""><small class="font-weight-bold" itemprop="about">HealthCare & Fitness</small></a>
                       <h6>Case Study Title</h6>
-                      <p class="card-text">Optometry cloud EHR software and practice management.</p>
-                      <a class="text-primary" href="#">Read Case Study</a>
+                      <p class="card-text simplepara" itemprop="headline">Optometry cloud EHR software and practice management.</p>
+                      <a class="text-primary" href="#" itemprop="mainEntityOfPage">Read Case Study</a>
                       <span class="fas fa-angle-right text-primary ml-8"></span>
                     </div>
                   </div>
                   <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-                    <div class="card-body">
-                      <img class="img-fluid pb-24" src="./assets/static/images/thumb-image.svg" alt="...">
-                      <a href=""><small class="font-weight-bold">HealthCare & Fitness</small></a>
+                    <div class="card-body" itemscope itemtype="https://schema.org/Article">
+                      <meta itemprop="author" content="tobeupdated" />
+                      <meta itemprop="publisher" content="Bluebash" />
+                      <img class="img-fluid pb-24" src="./assets/static/images/thumb-image.svg" alt="..."
+                        itemprop="image">
+                      <a class="text-decoration-none" href=""><small class="font-weight-bold" itemprop="about">HealthCare & Fitness</small></a>
                       <h6>Case Study Title</h6>
-                      <p class="card-text">Optometry cloud EHR software and practice management.</p>
-                      <a class="text-primary" href="#">Read Case Study</a>
+                      <p class="card-text simplepara" itemprop="headline">Optometry cloud EHR software and practice management.</p>
+                      <a class="text-primary text-decoration-none" href="#" itemprop="mainEntityOfPage">Read Case Study</a>
                       <span class="fas fa-angle-right text-primary ml-8"></span>
                     </div>
                   </div>
                   <div class="col-xl-3 col-md-3 col-sm-6 col-12">
-                    <div class="card-body">
-                      <img class="img-fluid pb-24" src="./assets/static/images/thumb-image.svg" alt="...">
-                      <a href=""><small class="font-weight-bold">HealthCare & Fitness</small></a>
+                    <div class="card-body" itemscope itemtype="https://schema.org/Article">
+                      <meta itemprop="author" content="tobeupdated" />
+                      <meta itemprop="publisher" content="Bluebash" />
+                      <img class="img-fluid pb-24" src="./assets/static/images/thumb-image.svg" alt="..."
+                        itemprop="image">
+                      <a class="text-decoration-none" href=""><small class="font-weight-bold" itemprop="about">HealthCare & Fitness</small></a>
                       <h6>Case Study Title</h6>
-                      <p class="card-text">Optometry cloud EHR software and practice management.</p>
-                      <a class="text-primary" href="#">Read Case Study</a>
+                      <p class="card-text simplepara" itemprop="headline">Optometry cloud EHR software and practice management.</p>
+                      <a class="text-primary" href="#" itemprop="mainEntityOfPage">Read Case Study</a>
                       <span class="fas fa-angle-right text-primary ml-8"></span>
                     </div>
                   </div>
@@ -309,15 +402,20 @@
                     <a class=" dropdown-item pb-8 font-weight-bold" href="">UI/UX Design</a>
                     <p class="pl-24">Explore design solutions delivered to startups and enterprises.</p>
                     <p class="pl-24">Catch us on</p>
-                    <div class="pl-24">
-                      <a href=""><img src="./assets/static/icons/dribbble-icon.svg" alt=""></a>
-                      <span class="pl-8">Dribble</span>
-                    </div>
-                    <div class="pt-8 pl-24">
-                      <a href=""><img src="./assets/static/icons/behance-icon.svg" alt=""></a>
-                      <span class="pl-8">Behance</span>
-                    </div>
-
+                    <span itemscope itemtype="https://schema.org/Organization">
+                      <div class="pl-24">
+                        <a href="" itemprop="sameAs">
+                          <img src="./assets/static/icons/dribbble-icon.svg" alt="">
+                          <span class="pl-8">Dribble</span>
+                        </a>
+                      </div>
+                      <div class="pt-8 pl-24">
+                        <a href="" itemprop="sameAs">
+                          <img src="./assets/static/icons/behance-icon.svg" alt="">
+                          <span class="pl-8">Behance</span>
+                        </a>
+                      </div>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -325,50 +423,57 @@
 
           </li>
           <li class="nav-item  mr-16">
-            <a class="nav-link font-weight-bold  d-flex justify-content-between text-dark " data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false" href="#" href="#"> <span>Company</span>  <span><i class="fas fa-angle-down ml-5"></i></span></a>
-            <div class="dropdown-menu  position-absolute ml-80" aria-labelledby="navbarDropdown">
+            <a class="nav-link font-weight-bold  d-flex justify-content-between text-dark " data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" href="#" href="#"> <span>Company</span> <span><i
+                  class="fas fa-angle-down ml-5 torotate"></i></span></a>
+            <div class="dropdown-menu  position-absolute ml-xl-80 ml-md-80 ml-lg-80 ml-0" aria-labelledby="navbarDropdown">
               <div class="container">
                 <div class="row">
 
                   <div class="col-xl-3 col-md-3 col-sm-6 col-12 ">
-                    <a class="font-weight-bold text-decoration-none" href="">RECENT BLOG POST</a>
-                    <div class="card-body border">
-                      <img class="img-fluid pb-24" src="./assets/static/images/card-img.svg" alt="...">
-
-                      <p class="card-text pb-40">An easier, more organised way to work, during Covid-19.</p>
-                      <a class="text-primary text-decoration-none" href="#">Read Post</a>
+                    <a class="font-weight-bold text-decoration-none caps" href="">RECENT BLOG POST</a>
+                    <div class="card-body border" itemscope itemtype="https://schema.org/Article">
+                      <meta itemprop="author" content="tobeupdated" />
+                      <meta itemprop="publisher" content="Bluebash" />
+                      <img class="img-fluid pb-24" src="./assets/static/images/card-img.svg" alt="..." itemprop="image">
+                      <p class="card-text pb-40" itemprop="headline">An easier, more organised way to work, during
+                        Covid-19.</p>
+                      <a class="text-primary text-decoration-none" href="#" itemprop="mainEntityOfPage">Read Post</a>
                       <span class="fas fa-angle-right text-primary ml-8"></span>
                     </div>
                   </div>
                   <div class="col-xl-3 col-md-3 col-sm-6 col-12 mt-24">
-                    <div class="card-body border">
-                      <img class="img-fluid pb-24" src="./assets/static/images/card-img.svg" alt="...">
-
-                      <p class="card-text pb-40">An easier, more organised way to work, during Covid-19.</p>
-                      <a class="text-primary text-decoration-none" href="#">Read Post</a>
+                    <div class="card-body border" itemscope itemtype="https://schema.org/Article">
+                      <meta itemprop="author" content="tobeupdated" />
+                      <meta itemprop="publisher" content="Bluebash" />
+                      <img class="img-fluid pb-24" src="./assets/static/images/card-img.svg" alt="..." itemprop="image">
+                      <p class="card-text pb-40" itemprop="headline">An easier, more organised way to work, during
+                        Covid-19.</p>
+                      <a class="text-primary text-decoration-none" href="#" itemprop="mainEntityOfPage">Read Post</a>
                       <span class="fas fa-angle-right text-primary ml-8"></span>
                     </div>
                   </div>
                   <div class="col-xl-3 col-md-3 col-sm-6 col-12  mt-24 ">
-                    <div class="card-body border">
-                      <img class="img-fluid pb-24" src="./assets/static/images/card-img.svg" alt="...">
-
-                      <p class="card-text pb-40">An easier, more organised way to work, during Covid-19.</p>
-                      <a class="text-primary text-decoration-none" href="#">Read Post</a>
+                    <div class="card-body border" itemscope itemtype="https://schema.org/Article">
+                      <meta itemprop="author" content="tobeupdated" />
+                      <meta itemprop="publisher" content="Bluebash" />
+                      <img class="img-fluid pb-24" src="./assets/static/images/card-img.svg" alt="..." itemprop="image">
+                      <p class="card-text pb-40" itemprop="headline">An easier, more organised way to work, during
+                        Covid-19.</p>
+                      <a class="text-primary text-decoration-none" href="#" itemprop="mainEntityOfPage">Read Post</a>
                       <span class="fas fa-angle-right text-primary ml-8"></span>
                     </div>
                   </div>
 
                   <div class="col-xl-3 col-md-3 col-sm-6 col-12">
                     <div class="d-flex flex-column">
-                      <a class="font-weight-bold pb-32 text-decoration-none" href=""> COMPANY</a>
-                      <a class="pb-16 text-decoration-none" href=""> About Us</a>
-                      <a class="pb-16  text-decoration-none"  href="">Our Team</a>
-                      <a class="pb-16  text-decoration-none"  href="">Events</a>
-                      <a class="pb-16  text-decoration-none"  href="">Blogs</a>
-                      <a class="pb-16  text-decoration-none"  href=""> Career</a>
-                      <a class="pb-16  text-decoration-none"  href="contactus.html"> Contact</a>
+                      <a class="font-weight-bold pb-32 text-decoration-none caps" href=""> COMPANY</a>
+                      <a class="pb-16 text-decoration-none simplepara" href=""> About Us</a>
+                      <a class="pb-16  text-decoration-none simplepara" href="">Our Team</a>
+                      <a class="pb-16  text-decoration-none simplepara" href="">Events</a>
+                      <a class="pb-16  text-decoration-none simplepara" href="">Blogs</a>
+                      <a class="pb-16  text-decoration-none simplepara" href=""> Career</a>
+                      <a class="pb-16  text-decoration-none simplepara" href="contactus.html"> Contact</a>
                       <a href=""> Media Kit</a>
                     </div>
 
@@ -391,21 +496,19 @@
 
   </div>
 
-
-
   <!-- *********************navbar ends **************************** -->
 
 
   <div class="container ">
     <div class="d-flex flex-column   align-items-center  justigy-content-center  ">
-      <h1 class="display-4 font-weight-bold mt-80 mb-0 text-center">Software Development </h1>
-      <h1 class="display-4 font-weight-bold mb-40 text-center">& design Services </h1>
-      <p class="lead mb-0 pb-0 text-center">We create solutions that solve your business pain, respond market needs,
+      <h1 class="display-4 font-weight-bold mt-80 mb-0 text-center w-75">Software Development & design Services</h1>
+     
+      <p class="lead mb-0 pb-0 text-center w-50 mt-40 mb-40">We create solutions that solve your business pain, respond market needs,
         transform
-        internal</p>
-      <p class="lead text-center "> operations, and follow the latest digital trends.</p>
+        internal operations, and follow the latest digital trends.</p>
+     
       <div class="d-flex flex-xl-row flex-sm-column flex-column mt-16 text-center">
-        <a class="btn btn-primary text-uppercase mr-16" href="">discuss your project</a>
+        <a class="btn btn-primary text-uppercase mr-16 pt-8" href="">discuss your project</a>
         <p class="mt-8 text-center">OR</p>
         <a class="btn btn-secondary text-uppercase ml-16" href=""> hire Developers</a>
       </div>
@@ -768,7 +871,126 @@
 
 
 
+ 
+</div>
+
+  
+
   <div class="container mt-80">
+    <div class="row">
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 ">
+        <h2 class="head2 text-center text-xl-left text-md-left text-lg-left  ">Our innovative & streamlined solutions</h2>
+        <p class="lead text-center text-xl-left text-md-left text-lg-left  ">Leading web & mobile app development company,
+          expertise in delivering assured quality product
+          and intuitive user experience. Businesses of
+          every size, shape and sort have already seen
+          tremendous product success and increase in return on investment (ROI).</p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-40">
+    <div class="row">
+      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12">
+        <div class="card cardbox  border ">
+          <div class="card-body ">
+            <h6>Speed Optimization</h6>
+            <p class="text-black simplepara">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
+              teck.</p>
+            <div class="text-right">
+              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-xl-0 mt-md-0 mt-32">
+        <div class="card cardbox  border ">
+          <div class="card-body ">
+            <h6>Website Visibility</h6>
+            <p class="text-black simplepara">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
+              teck.</p>
+            <div class="text-right">
+              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12  mt-xl-0 mt-md-0 mt-32">
+        <div class="card cardbox  border ">
+          <div class="card-body ">
+            <h6>CRM Software Solution</h6>
+            <p class="text-black simplepara">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
+              teck.</p>
+            <div class="text-right">
+              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
+        <div class="card cardbox  border ">
+          <div class="card-body ">
+            <h6>EHR Software Solution</h6>
+            <p class="text-black simplepara">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
+              teck.</p>
+            <div class="text-right">
+              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
+        <div class="card cardbox  border ">
+          <div class="card-body ">
+            <h6>ERP Software Solution</h6>
+            <p class="text-black simplepara">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
+              teck.</p>
+            <div class="text-right">
+              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
+        <div class="card cardbox  border ">
+          <div class="card-body ">
+            <h6>B2B Software Solution</h6>
+            <p class="text-black simplepara">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
+              teck.</p>
+            <div class="text-right">
+              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
+        <div class="card cardbox  border ">
+          <div class="card-body ">
+            <h6>B2C Software Solution</h6>
+            <p class="text-black simplepara">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
+              teck.</p>
+            <div class="text-right">
+              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
+        <div class="card cardbox  border ">
+          <div class="card-body ">
+            <h6>We empower our client businesses with modernization, precision & success.</h6>
+
+
+               <a class="text-primary" href="">See all Solutions <span class="fas fa-angle-right ml-8"></span></a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- our streemline  and services ends here -->
+  <div class="container-fluid bg-secondary  py-80 mt-80 ">
+  <div class="container ">
     <div class="row">
       <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
         <h2 class="head2 text-center text-xl-left text-md-left text-lg-left">Industries we impact</h2>
@@ -858,124 +1080,13 @@
   </div> 
 </div>
 
-  <!-- ***********************industries we impact ends here****************** -->
-
-  <div class="container mt-80">
-    <div class="row">
-      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 ">
-        <h2 class="head2 text-center text-xl-left text-md-left text-lg-left  ">Our innovative & streamlined solutions</h2>
-        <p class="lead text-center text-xl-left text-md-left text-lg-left  ">Leading web & mobile app development company,
-          expertise in delivering assured quality product
-          and intuitive user experience. Businesses of
-          every size, shape and sort have already seen
-          tremendous product success and increase in return on investment (ROI).</p>
-      </div>
-    </div>
-  </div>
-  <div class="container mt-40">
-    <div class="row">
-      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12">
-        <div class="card cardbox  border ">
-          <div class="card-body ">
-            <h6>Speed Optimization</h6>
-            <p class="text-black">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
-              teck.</p>
-            <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-xl-0 mt-md-0 mt-32">
-        <div class="card cardbox  border ">
-          <div class="card-body ">
-            <h6>Website Visibility</h6>
-            <p class="text-black">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
-              teck.</p>
-            <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12  mt-xl-0 mt-md-0 mt-32">
-        <div class="card cardbox  border ">
-          <div class="card-body ">
-            <h6>CRM Software Solution</h6>
-            <p class="text-black">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
-              teck.</p>
-            <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
-        <div class="card cardbox  border ">
-          <div class="card-body ">
-            <h6>EHR Software Solution</h6>
-            <p class="text-black">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
-              teck.</p>
-            <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
-        <div class="card cardbox  border ">
-          <div class="card-body ">
-            <h6>ERP Software Solution</h6>
-            <p class="text-black">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
-              teck.</p>
-            <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
-        <div class="card cardbox  border ">
-          <div class="card-body ">
-            <h6>B2B Software Solution</h6>
-            <p class="text-black">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
-              teck.</p>
-            <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
-        <div class="card cardbox  border ">
-          <div class="card-body ">
-            <h6>B2C Software Solution</h6>
-            <p class="text-black">Lorem ipsum dolor sit amet, con sect etur adipis cing elit ut aliquam, purus sit fero
-              teck.</p>
-            <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-4 col-md-4 col-lg-4 col-sm-6 col-12 mt-32">
-        <div class="card cardbox  border ">
-          <div class="card-body ">
-            <h6>We empower our client businesses with modernization, precision & success.</h6>
+<!-- ***********************industries we impact ends here****************** -->
 
 
-            <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
-            </div>
 
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
-  <!-- our streemline  and services ends here -->
-  <div class="container-fluid bg-secondary mt-80">
+
+ 
     <div class="container  pt-80">
       <div class="row">
         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 ">
@@ -986,7 +1097,7 @@
     </div>
 
 
-    <div class="container mt-40 pb-40">
+    <div class="container mt-40 pb-40 ">
       <div class="row">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
           <div class="card">
@@ -994,7 +1105,7 @@
             <div class="card-body">
               <small class="text-uppercase font-weight-bold"> HealthCare & Fitness</small>
               <h6 class="card-title">Case Study Title</h6>
-              <p class="card-text text-black mt-8">Some quick example text to build on the card title and make up the
+              <p class="card-text text-black mt-8 simplepara">Some quick example text to build on the card title and make up the
                 bulk of the card's content.</p>
               <a class="text-primary mt-80" href="">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
             </div>
@@ -1006,7 +1117,7 @@
             <div class="card-body">
               <small class="text-uppercase font-weight-bold"> HealthCare & Fitness</small>
               <h6 class="card-title">Case Study Title</h6>
-              <p class="card-text text-black mt-8">Some quick example text to build on the card title and make up the
+              <p class="card-text text-black mt-8 simplepara">Some quick example text to build on the card title and make up the
                 bulk of the card's content.</p>
               <a class="text-primary mt-80" href="">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
             </div>
@@ -1018,7 +1129,7 @@
             <div class="card-body">
               <small class="text-uppercase font-weight-bold"> HealthCare & Fitness</small>
               <h6 class="card-title">Case Study Title</h6>
-              <p class="card-text text-black mt-8">Some quick example text to build on the card title and make up the
+              <p class="card-text text-black mt-8 simplepara">Some quick example text to build on the card title and make up the
                 bulk of the card's content.</p>
               <a class="text-primary mt-80" href="">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
             </div>
@@ -1030,7 +1141,7 @@
             <div class="card-body">
               <small class="text-uppercase font-weight-bold"> HealthCare & Fitness</small>
               <h6 class="card-title">Case Study Title</h6>
-              <p class="card-text text-black mt-8">Some quick example text to build on the card title and make up the
+              <p class="card-text text-black mt-8 simplepara">Some quick example text to build on the card title and make up the
                 bulk of the card's content.</p>
               <a class="text-primary mt-80" href="">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
 
@@ -1039,7 +1150,7 @@
         </div>
       </div>
     </div>
-  </div>
+  
   <!-- I*******************************Featured case study here******************** -->
   <div class="container-fluid mt-80  bg-warning py-80">
     <div class="container text-center text-white">
@@ -1080,7 +1191,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-xl-8 col-lg-8 col-md-8 col-12">
-                    <p class="text-black">The Time and Material approach is focused on small and mid-sized businesses as
+                    <p class="text-black simplepara">The Time and Material approach is focused on small and mid-sized businesses as
                       it best suits complex and long-term projects. Ongoing projects that are at the testing or bug
                       fixing stage and projects that require maintenance or support are also suitable for T&M.</p>
                     <p class="text-black mt-8 mb-40"> To start working by Time and Material approach, we estimate and
@@ -1147,7 +1258,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-xl-8 col-lg-8 col-md-8 col-12">
-                    <p class="text-black">The Time and Material approach is focused on small and mid-sized businesses as
+                    <p class="text-black simplepara">The Time and Material approach is focused on small and mid-sized businesses as
                       it best suits complex and long-term projects. Ongoing projects that are at the testing or bug
                       fixing stage and projects that require maintenance or support are also suitable for T&M.</p>
                     <p class="text-black mt-8"> To start working by Time and Material approach, we estimate and agree on
@@ -1217,7 +1328,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-xl-8 col-lg-8 col-md-8 col-12">
-                    <p class="text-black">The Time and Material approach is focused on small and mid-sized businesses as
+                    <p class="text-black simplepara">The Time and Material approach is focused on small and mid-sized businesses as
                       it best suits complex and long-term projects. Ongoing projects that are at the testing or bug
                       fixing stage and projects that require maintenance or support are also suitable for T&M.</p>
                     <p class="text-black mt-8"> To start working by Time and Material approach, we estimate and agree on
@@ -1298,7 +1409,7 @@
       </div>
       <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-12 mt-xl-0 mt-lg-0 mt-sm-32 mt-40 ">
         <div class="d-inline-flex flex-column">
-          <a class="font-weight-bold pb-16 mb-0 text-decoration-none" href="">SERVICES</a>
+          <a class="font-weight-bold pb-16 mb-0 text-decoration-none caps" href="">SERVICES</a>
           <a class="text-black text-decoration-none font-weight-normal pb-8" href="">Web App Development</a>
           <a class="text-black text-decoration-none font-weight-normal pb-8" href="">Hire Web App Developers</a>
           <a class="text-black text-decoration-none font-weight-normal pb-8" href="">UI/UX Design</a>
@@ -1310,7 +1421,7 @@
       </div>
       <div class=" col-xl-1 col-lg-1 col-md-6 col-sm-4 col-4 mt-xl-0 mt-lg-0 mt-sm-32 mt-32 ">
         <div class="d-inline-flex flex-column">
-          <a class="font-weight-bold text-decoration-none pb-16 mb-0" href="">TECHNOLOGIES</a>
+          <a class="font-weight-bold text-decoration-none pb-16 mb-0 caps" href="">TECHNOLOGIES</a>
           <a class="text-black text-decoration-none font-weight-normal pb-8" href="">Ruby on Rails</a>
           <a class="text-black text-decoration-none font-weight-normal pb-8" href="">React Js</a>
           <a class="text-black text-decoration-none font-weight-normal pb-8" href="">Bootstrap</a>
@@ -1348,8 +1459,8 @@
       </div>
       <div class=" col-xl-2 col-md-6 col-lg-2 col-12  col-sm-6 col-6 mt-lg-0 mt-sm-32 mt-32">
         <div class="d-inline-flex flex-column justify-content-between">
-          <a class="font-weight-bold pb-16 mb-0" href="">SOLUTIONS</a>
-          <a class="text-black  text-decoration-none  font-weight-normal pb-8" href="">Website Visibility</a>
+          <a class="font-weight-bold pb-16 mb-0 caps" href="">SOLUTIONS</a>
+          <a class="text-black  text-decoration-none  font-weight-normal pb-8 " href="">Website Visibility</a>
           <a class="text-black  text-decoration-none font-weight-normal pb-8" href="">e-Commerce Software Solution</a>
           <a class="text-black  text-decoration-none font-weight-normal pb-8" href="">CRM Software Solution</a>
           <a class="text-black  text-decoration-none font-weight-normal pb-8" href="">EHR Software Solution</a>
@@ -1360,7 +1471,7 @@
       </div>
       <div class="col-xl-2 col-md-6 col-lg-2 col-sm-6 col-6 mt-lg-0 mt-sm-32 mt-32">
         <div class="d-inline-flex flex-column justify-content-between">
-          <a class="font-weight-bold text-decoration-none pb-16 mb-0" href="">INDUSTRIES</a>
+          <a class="font-weight-bold text-decoration-none pb-16 mb-0 caps" href="">INDUSTRIES</a>
           <a class="text-black  text-decoration-none font-weight-normal pb-8" href="">Real Estate</a>
           <a class="text-black  text-decoration-none font-weight-normal pb-8" href="">Fintech & Banking</a>
           <a class="text-black  text-decoration-none font-weight-normal pb-8" href="">Health Care & Fitness</a>
