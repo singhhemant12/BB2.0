@@ -14,11 +14,10 @@
   <title>BB_2.0</title>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/Organization">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-24 border-bottom ">
-      <a class="navbar-brand" href="#" itemscope itemtype="http://schema.org/Brand"><img
-          src="./assets/static/icons/00_Brand Logo.svg" alt="" itemprop="logo"></a>
+      <a class="navbar-brand" href="https://bluebash.co" itemprop="url"><img itemprop="logo" src="./assets/static/icons/00_Brand Logo.svg" alt="" itemprop="logo"></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -525,21 +524,29 @@
             post-launch
             support and maintenance.</h4>
         </div>
-        <div class="col-xl-2 col-lg-2 col-6 mt-32 mt-sm-32 mt-xl-0">
-          
-            <div class="card  border">
-              <div class="card-body text-center ">
-                <h2 class="head2">5/5</h2>
-                <p>Rating</p>
-                <img class="img-fluid" src="./assets/static/images/clutch-logo.svg" alt="">
-              </div>
-            </div>
-         
-        </div>
-        <div class="col-xl-2 col-lg-2 col-6 mt-32 mt-sm-32 mt-xl-0">
+        <div class=" col-md-2 col-xl-2 col-xs-6 col-lg-2 col-6 ">
           <div class="card  border">
-            <div class="card-body text-center">
-              <h2 class="head2">5/5</h2>
+            <div class="card-body text-center " itemscope itemtype="https://schema.org/Review">
+              <meta itemprop="author" content="Clutch" />
+              <meta itemprop="itemReviewed" content="Bluebash" />
+              <h2 class="head2"itemscope itemtype="https://schema.org/Rating">
+                <meta itemprop="worstRating" content="1" />
+                <span itemprop="ratingValue">5</span>/<span itemprop="bestRating">5</span>
+              </h2>
+              <p>Rating</p>
+              <img class="img-fluid" src="./assets/static/images/clutch-logo.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-2 col-xl-2 col-xs-6 col-lg-2 col-6 ml-0">
+          <div class="card  border">
+            <div class="card-body text-center " itemscope itemtype="https://schema.org/Review">
+              <meta itemprop="author" content="Goodfirms" />
+              <meta itemprop="itemReviewed" content="Bluebash" />
+              <h2 class="head2"itemscope itemtype="https://schema.org/Rating">
+                <meta itemprop="worstRating" content="1" />
+                <span itemprop="ratingValue">5</span>/<span itemprop="bestRating">5</span>
+              </h2>
               <p>Rating</p>
               <img class="img-fluid" src="./assets/static/images/goodfirms-logo.svg" alt="">
             </div>

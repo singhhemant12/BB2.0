@@ -14,12 +14,10 @@
   <title>BB_2.0</title>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/Organization">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-24 border-bottom ">
-      <a class="navbar-brand" href="#" itemscope itemtype="http://schema.org/Brand"><img
-          src="./assets/static/icons/00_Brand Logo.svg" alt="" itemprop="logo"></a>
-
+      <a class="navbar-brand" href="https://bluebash.co" itemprop="url"><img itemprop="logo" src="./assets/static/icons/00_Brand Logo.svg" alt="" itemprop="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -524,11 +522,33 @@
           <h4 class="head4">BlueBash is a one-stop IT service provider that will take care of all your web development
             needs by providing high-end solutions that are innovative and profitable.</h4>
         </div>
-        <div class="col-xl-2 col-lg-2 col-6 mt-32 mt-sm-32 mt-xl-0">
-          <img src="./assets/static/icons/gltch.svg" alt="">
+        <div class=" col-md-2 col-xl-2 col-xs-6 col-lg-2 col-6 ">
+          <div class="card  border">
+            <div class="card-body text-center " itemscope itemtype="https://schema.org/Review">
+              <meta itemprop="author" content="Clutch" />
+              <meta itemprop="itemReviewed" content="Bluebash" />
+              <h2 class="head2"itemscope itemtype="https://schema.org/Rating">
+                <meta itemprop="worstRating" content="1" />
+                <span itemprop="ratingValue">5</span>/<span itemprop="bestRating">5</span>
+              </h2>
+              <p>Rating</p>
+              <img class="img-fluid" src="./assets/static/images/clutch-logo.svg" alt="">
+            </div>
+          </div>
         </div>
-        <div class="col-xl-2 col-lg-2 col-6 mt-32 mt-sm-32 mt-xl-0">
-          <img src="./assets/static/icons/goodfm.svg" alt="">
+        <div class=" col-md-2 col-xl-2 col-xs-6 col-lg-2 col-6 ml-0">
+          <div class="card  border">
+            <div class="card-body text-center " itemscope itemtype="https://schema.org/Review">
+              <meta itemprop="author" content="Goodfirms" />
+              <meta itemprop="itemReviewed" content="Bluebash" />
+              <h2 class="head2"itemscope itemtype="https://schema.org/Rating">
+                <meta itemprop="worstRating" content="1" />
+                <span itemprop="ratingValue">5</span>/<span itemprop="bestRating">5</span>
+              </h2>
+              <p>Rating</p>
+              <img class="img-fluid" src="./assets/static/images/goodfirms-logo.svg" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -551,18 +571,20 @@
     <div class="row">
       <div class="col-xl-3 col-md-6 col-sm-12 col-12">
 
-        <div class="card border">
+        <div class="card border" itemscope itemtype="https://schema.org/Article">
+          <meta itemprop="author" content="tobeupdated" />
+          <meta itemprop="publisher" content="Bluebash" />
           <div class="bg-lightpink text-center py-48">
-            <img class="w-25 h-25 " src="./assets/static/icons/logo-ruby.svg" class="card-img-top" alt="...">
+            <img class="w-25 h-25 " src="./assets/static/icons/logo-ruby.svg" class="card-img-top" alt="..." itemprop="image">
           </div>
           <div class="card-body">
             <small class="text-black text-uppercase font-weight-bold">Service</small>
-            <h6 class="card-title">Ruby on Rails (RoR)
+            <h6 class="card-title" itemprop="headline">Ruby on Rails (RoR)
               Development</h6>
-            <p class="card-text simplepara"> We’re competent RoR development specialists who deliver efficient, reliable, robust,
+            <p class="card-text simplepara" itemprop="description"> We’re competent RoR development specialists who deliver efficient, reliable, robust,
               portable, and maintainable code.</p>
             <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+              <a class="fas fa-long-arrow-alt-right text-primary" href="#" itemprop="mainEntityOfPage"></a>
             </div>
 
 
@@ -570,18 +592,20 @@
         </div>
       </div>
       <div class="col-xl-3 col-md-6 col-sm-12 col-12 mt-xl-0 mt-md-0 mt-lg-0 mt-32">
-        <div class="card border">
+        <div class="card border" itemscope itemtype="https://schema.org/Article">
+          <meta itemprop="author" content="tobeupdated" />
+          <meta itemprop="publisher" content="Bluebash" />
           <div class="bg-skyblue text-center py-48">
-            <img class="w-25 h-25 " src="./assets/static/icons/logo-react.svg" class="card-img-top" alt="...">
+            <img class="w-25 h-25 " src="./assets/static/icons/logo-react.svg" class="card-img-top" alt="..." itemprop="image">
           </div>
           <div class="card-body">
             <small class="text-black text-uppercase font-weight-bold">Service</small>
-            <h6 class="card-title">React JS
+            <h6 class="card-title" itemprop="headline">React JS
               Development</h6>
-            <p class="card-text simplepara"> We’re competent React development specialists who deliver efficient, reliable, robust,
+            <p class="card-text simplepara" itemprop="description"> We’re competent React development specialists who deliver efficient, reliable, robust,
               portable, and maintainable code.</p>
             <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+              <a class="fas fa-long-arrow-alt-right text-primary" href="#" itemprop="mainEntityOfPage"></a>
             </div>
 
 
@@ -589,18 +613,20 @@
         </div>
       </div>
       <div class="col-xl-3 col-md-6 col-sm-12 col-12  mt-xl-0 mt-md-0 mt-lg-0 mt-32">
-        <div class="card border">
+        <div class="card border" itemscope itemtype="https://schema.org/Article">
+          <meta itemprop="author" content="tobeupdated" />
+          <meta itemprop="publisher" content="Bluebash" />
           <div class="bg-skyblue text-center py-48">
-            <img class="w-25 h-25 " src="./assets/static/icons/saas-logo.svg" class="card-img-top" alt="...">
+            <img class="w-25 h-25 " src="./assets/static/icons/saas-logo.svg" class="card-img-top" alt="..." itemprop="image">
           </div>
           <div class="card-body">
             <small class="text-black text-uppercase font-weight-bold">Service</small>
-            <h6 class="card-title">SaaS Application
+            <h6 class="card-title" itemprop="headline">SaaS Application
               Development</h6>
-            <p class="card-text simplepara">We’re competent SaaS development specialists who deliver efficient, reliable, robust,
+            <p class="card-text simplepara" itemprop="description">We’re competent SaaS development specialists who deliver efficient, reliable, robust,
               portable, and maintainable code.</p>
             <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+              <a class="fas fa-long-arrow-alt-right text-primary" href="#" itemprop="mainEntityOfPage"></a>
             </div>
 
 
@@ -608,18 +634,20 @@
         </div>
       </div>
       <div class="col-xl-3 col-md-6 col-sm-12 col-12  mt-xl-0 mt-md-0 mt-lg-0 mt-32">
-        <div class="card border">
+        <div class="card border" itemscope itemtype="https://schema.org/Article">
+          <meta itemprop="author" content="tobeupdated" />
+          <meta itemprop="publisher" content="Bluebash" />
           <div class="bg-lightpink text-center py-48">
-            <img class="w-25 h-25 " src="./assets/static/icons/logo-pwa.svg" class="card-img-top" alt="...">
+            <img class="w-25 h-25 " src="./assets/static/icons/logo-pwa.svg" class="card-img-top" alt="..." itemprop="image">
           </div>
           <div class="card-body">
             <small class="text-black text-uppercase font-weight-bold">Service</small>
-            <h6 class="card-title">Progressive Web App
+            <h6 class="card-title" itemprop="headline">Progressive Web App
               Development</h6>
-            <p class="card-text simplepara"> We’re competent PWA development specialists who deliver efficient, reliable, robust,
+            <p class="card-text simplepara" itemprop="description"> We’re competent PWA development specialists who deliver efficient, reliable, robust,
               portable, and maintainable code.</p>
             <div class="text-right">
-              <a class="fas fa-long-arrow-alt-right text-primary" href=""></a>
+              <a class="fas fa-long-arrow-alt-right text-primary" href="#" itemprop="mainEntityOfPage"></a>
             </div>
 
           </div>
@@ -632,11 +660,12 @@
   <!-- ******************website development service ends here************ -->
   <div class="container mt-80">
     <div class="row">
-      <div class="col-xl-8 col-lg-8 col-md-8 col-12">
-        <p class="font-weight-bold text-uppercase caps">Custom Web Development Service</p>
-        <h4 class="head4">We are a leading website development company helping recognized brands with digital landscape
+      <div class="col-xl-8 col-lg-8 col-md-8 col-12" itemscope itemtype="https://schema.org/Service">
+        <meta itemprop="provider" content="Bluebash"/>
+        <p class="font-weight-bold text-uppercase caps" itemprop="serviceType">Custom Web Development Service</p>
+        <h4 class="head4" itemprop="slogan">We are a leading website development company helping recognized brands with digital landscape
           presence through custom web development services. </h4>
-        <a class="mt-40 text-primary" href="">Discuss Your Requirements <span
+        <a class="mt-40 text-primary" href="#" itemprop="mainEntityOfPage">Discuss Your Requirements <span
             class="fas fa-angle-right ml-8 mt-8"></span></a>
       </div>
     </div>
@@ -658,50 +687,58 @@
     <div class="container mt-40 pb-40">
       <div class="row">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-          <div class="card">
-            <img class=" imgtop" src="./assets/static/images/prodscreen.svg" class="card-img-top" alt="...">
+          <div class="card" itemscope itemtype="https://schema.org/Article">
+            <meta itemprop="author" content="tobeupdated" />
+            <meta itemprop="publisher" content="Bluebash" />
+            <img class=" imgtop" src="./assets/static/images/prodscreen.svg" class="card-img-top" alt="..." itemprop="image">
             <div class="card-body">
-              <small class="text-uppercase font-weight-bold"> HealthCare & Fitness</small>
-              <h6 class="card-title">Case Study Title</h6>
-              <p class="card-text text-black mt-8 simplepara">Some quick example text to build on the card title and make up the
+              <small class="text-uppercase font-weight-bold" itemprop="about"> HealthCare & Fitness</small>
+              <h6 class="card-title" itemprop="headline">Case Study Title</h6>
+              <p class="card-text text-black mt-8 simplepara" itemprop="description">Some quick example text to build on the card title and make up the
                 bulk of the card's content.</p>
-              <a class="text-primary mt-80" href="">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
+              <a class="text-primary mt-80" href="#" itemprop="mainEntityOfPage">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12  mt-xl-0 mt-md-0 mt-lg-0 mt-32">
           <div class="card">
-            <img class=" imgto" src="./assets/static/images/prodscreen.svg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <small class="text-uppercase font-weight-bold"> HealthCare & Fitness</small>
-              <h6 class="card-title">Case Study Title</h6>
-              <p class="card-text text-black mt-8 simplepara">Some quick example text to build on the card title and make up the
+            <img class=" imgto" src="./assets/static/images/prodscreen.svg" class="card-img-top" alt="..." itemprop="image">
+            <div class="card-body" itemscope itemtype="https://schema.org/Article">
+              <meta itemprop="author" content="tobeupdated" />
+              <meta itemprop="publisher" content="Bluebash" />
+              <small class="text-uppercase font-weight-bold" itemprop="about"> HealthCare & Fitness</small>
+              <h6 class="card-title" itemprop="headline">Case Study Title</h6>
+              <p class="card-text text-black mt-8" itemprop="description">Some quick example text to build on the card title and make up the
                 bulk of the card's content.</p>
-              <a class="text-primary mt-80" href="">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
+              <a class="text-primary mt-80" href="#" itemprop="mainEntityOfPage">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12  mt-xl-0 mt-md-0 mt-lg-0 mt-32">
           <div class="card">
-            <img class=" imgt" src="./assets/static/images/prodscreen.svg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <small class="text-uppercase font-weight-bold"> HealthCare & Fitness</small>
-              <h6 class="card-title">Case Study Title</h6>
-              <p class="card-text text-black mt-8 simplepara">Some quick example text to build on the card title and make up the
+            <img class=" imgt" src="./assets/static/images/prodscreen.svg" class="card-img-top" alt="..." itemprop="image">
+            <div class="card-body" itemscope itemtype="https://schema.org/Article">
+              <meta itemprop="author" content="tobeupdated" />
+              <meta itemprop="publisher" content="Bluebash" />
+              <small class="text-uppercase font-weight-bold" itemprop="about"> HealthCare & Fitness</small>
+              <h6 class="card-title" itemprop="headline">Case Study Title</h6>
+              <p class="card-text text-black mt-8" itemprop="description">Some quick example text to build on the card title and make up the
                 bulk of the card's content.</p>
-              <a class="text-primary mt-80" href="">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
+              <a class="text-primary mt-80" href="#" itemprop="mainEntityOfPage">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
             </div>
           </div>
         </div>
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12  mt-xl-0 mt-md-0 mt-lg-0 mt-32">
           <div class="card">
-            <img class="imgg" src="./assets/static/images/prodscreen.svg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <small class="text-uppercase font-weight-bold"> HealthCare & Fitness</small>
-              <h6 class="card-title">Case Study Title</h6>
-              <p class="card-text text-black mt-8 simplepara">Some quick example text to build on the card title and make up the
+            <img class="imgg" src="./assets/static/images/prodscreen.svg" class="card-img-top" alt="..." itemprop="image">
+            <div class="card-body" itemscope itemtype="https://schema.org/Article">
+              <meta itemprop="author" content="tobeupdated" />
+              <meta itemprop="publisher" content="Bluebash" />
+              <small class="text-uppercase font-weight-bold" itemprop="about"> HealthCare & Fitness</small>
+              <h6 class="card-title" itemprop="headline">Case Study Title</h6>
+              <p class="card-text text-black mt-8" itemprop="description">Some quick example text to build on the card title and make up the
                 bulk of the card's content.</p>
-              <a class="text-primary mt-80" href="">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
+              <a class="text-primary mt-80" href="#" itemprop="mainEntityOfPage">Read Case Study <span class="fas fa-angle-right ml-8"></span></a>
 
             </div>
           </div>
@@ -1437,62 +1474,60 @@
       <div class="row mt-40">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
           <div class="card border">
-        <div class="crad-body ml-16 mt-16 mb-16">
-          <h6>John Smith</h6>
-          <small class="mt-8"></small>
-          <img class="mt-40 mb-40 img-fluid" src="./assets/static/images/developer.svg" alt="">
-          <div class="d-flex justify-content-between">
-            <a class="text-primary" href="">Read Bio <span class="fas fa-angle-right ml-8"></span></a>
-             <span class="text-primary mr-xl-24 mr-lg-24 mr-md-24 mr-24"><i class="fab fa-linkedin"></i></span>
-            </div> 
-        </div>
-      </div>
+            <div class="card-body ml-16 mt-16 mb-16" itemprop="employee" itemscope itemtype="https://schema.org/Person">
+              <h6 itemprop="givenName">John Smith</h6>
+              <small class="mt-8" itemprop="hasOccupation">RoR Developer</small>
+              <img class="mt-40 mb-40 img-fluid" src="./assets/static/images/developer.svg" alt="" itemprop="image">
+              <div class="d-flex justify-content-between">
+                <a class="text-primary" href="#" itemprop="mainEntityOfPage">Read Bio <span class="fas fa-angle-right ml-8"></span></a>
+                <span class="text-primary mr-xl-24 mr-lg-24 mr-md-24 mr-24"><i class="fab fa-linkedin"></i></span>
+              </div> 
+            </div>
+          </div>
 
-    </div>
+        </div>
        
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
           <div class="card border">
-        <div class="crad-body ml-16 mt-16 mb-16">
-          <h6>John Smith</h6>
-          <small class="mt-8"></small>
-          <img class="mt-40 mb-40 img-fluid" src="./assets/static/images/reactdeveloper.svg" alt="">
-          <div class="d-flex justify-content-between">
-            <a class="text-primary" href="">Read Bio <span class="fas fa-angle-right ml-8"></span></a>
-             <span class="text-primary mr-24"><i class="fab fa-linkedin"></i></span>
-            </div> 
-        </div>
-      </div>
-
-    </div>
-        
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
-              <div class="card border">
-            <div class="crad-body ml-16 mt-16 mb-16">
-              <h6>John Smith</h6>
-              <small class="mt-8">Backend developer</small>
-              <img class="mt-40 mb-40 img-fluid" src="./assets/static/images/backenddeveloper.svg" alt="">
+            <div class="crad-body ml-16 mt-16 mb-16" itemprop="employee" itemscope itemtype="https://schema.org/Person">
+              <h6 itemprop="givenName">John Smith</h6>
+              <small class="mt-8" itemprop="hasOccupation">React Developer</small>
+              <img class="mt-40 mb-40 img-fluid" src="./assets/static/images/reactdeveloper.svg" alt="" itemprop="image">
               <div class="d-flex justify-content-between">
-                <a class="text-primary" href="">Read Bio <span class="fas fa-angle-right ml-8"></span></a>
-                 <span class="text-primary mr-24"><i class="fab fa-linkedin"></i></span>
-                </div> 
+                <a class="text-primary" href="#" itemprop="mainEntityOfPage">Read Bio <span class="fas fa-angle-right ml-8"></span></a>
+                <span class="text-primary mr-24"><i class="fab fa-linkedin"></i></span>
+              </div> 
             </div>
           </div>
 
         </div>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+        <div class="card border">
+          <div class="card-body ml-16 mt-16 mb-16" itemprop="employee" itemscope itemtype="https://schema.org/Person">
+            <h6 itemprop="givenName">John Smith</h6>
+            <small class="mt-8" itemprop="hasOccupation">Backend developer</small>
+            <img class="mt-40 mb-40 img-fluid" src="./assets/static/images/backenddeveloper.svg" alt="" itemprop="image">
+            <div class="d-flex justify-content-between">
+              <a class="text-primary" href="#" itemprop="mainEntityOfPage">Read Bio <span class="fas fa-angle-right ml-8"></span></a>
+              <span class="text-primary mr-24"><i class="fab fa-linkedin"></i></span>
+            </div> 
+          </div>
+        </div>
+
+      </div>
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
              <div class="card border">
-            <div class="crad-body ml-16 mt-16 mb-16">
-              <h6>John Smith</h6>
-              <small class="mt-8">Frontend developer</small>
-              <img class="mt-40 mb-40 img-fluid" src="./assets/static/images/developer.svg" alt="">
+            <div class="card-body ml-16 mt-16 mb-16" itemprop="employee" itemscope itemtype="https://schema.org/Person">
+              <h6 itemprop="givenName">John Smith</h6>
+              <small class="mt-8" itemprop="hasOccupation">Frontend developer</small>
+              <img class="mt-40 mb-40 img-fluid" src="./assets/static/images/developer.svg" alt="" itemprop="image">
              
               <div class="d-flex justify-content-between">
-                <a class="text-primary" href="">Read Bio <span class="fas fa-angle-right ml-8"></span></a>
+                <a class="text-primary" href="#" itemprop="mainEntityOfPage">Read Bio <span class="fas fa-angle-right ml-8"></span></a>
                  <span class="text-primary mr-24"><i class="fab fa-linkedin"></i></span>
                 </div> 
             </div>
           </div>
-
         </div>
        
       </div>  
